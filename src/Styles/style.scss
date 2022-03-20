@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.sudoku-main{
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.bordered-row{
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+}
+
+.bordered-col{
+    border-right: 1px solid #c5c5c5;
+}
+
+.col-6{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    span{
+        font-size: 18px;
+        color: #5c5959;
+        font-weight: 500;
+    }
+}
+
+
+.top-header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    h3{
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1;
+    }
+}
+
+.bottom-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn{
+    width: 60px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.btn-solid{
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    &:hover{
+        background-color: #e4e4e4;
+    }
+}
+
+.btn-transparent{
+    &:hover{
+        color: #a5a5a5;
+    }
+}
+
+.btn-full{
+    width: 100%;
+    border: 1px solid #c5c5c5;
+    font-size: 18px;
+    line-height: 1;
+    border-radius: 5px;
+    color: #5c5959;
+    height: unset;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+table{
+    border: 3px solid gray;
+    border-collapse: collapse;
+    input{
+        border: 1px solid lightgray;
+        text-align: center;
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+        &:focus{
+            outline: none;
+        }
+        &:disabled{
+            background-color: beige;
+        }
+    }
+}
+
+.rightBorder{
+    border-right: 1px solid black;
+}
+.bottomBorder{
+    border-bottom: 1px solid black;
+}
